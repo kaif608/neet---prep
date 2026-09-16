@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEET Prep Hub</title>
+    <!-- PWA Manifest & Theme -->
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#0f0c29">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body class="bg-slate-950 text-slate-100 min-h-screen font-sans antialiased selection:bg-indigo-500 selection:text-white pb-12">
+
+    <!-- Top Header -->
+    <header class="sticky top-0 z-50 bg-slate-900/80 backdrop-blur-md border-b border-slate-800 px-4 py-3 flex items-center justify-between">
+        <div class="flex items-center space-x-3">
+            <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-indigo-600 to-violet-500 flex items-center justify-center shadow-lg shadow-indigo-500/30 overflow-hidden">
+                <img src="logo.svg" alt="Logo" class="w-full h-full object-cover">
+            </div>
+            <div>
+                <h1 class="font-bold text-base tracking-wide text-white leading-tight">NEET Prep Hub</h1>
+                <p class="text-xs text-indigo-400 font-medium">Target Selection 2027</p>
+            </div>
+        </div>
+        <span class="px-3 py-1 bg-indigo-500/10 border border-indigo-500/30 text-indigo-400 text-xs font-semibold rounded-full">
+            Pro App
+        </span>
+    </header>
+
+    <!-- Main Container -->
+    <main class="max-w-md mx-auto px-4 py-5 space-y-6">
+
+        <!-- Welcome Banner -->
+        <div class="relative overflow-hidden rounded-2xl bg-gradient-to-br from-indigo-900/60 via-slate-900 to-purple-900/50 border border-indigo-500/20 p-5 shadow-xl">
+            <div class="absolute -right-6 -bottom-6 w-32 h-32 bg-indigo-500/10 rounded-full blur-2xl"></div>
+            <div class="relative z-10">
+                <span class="inline-block px-2.5 py-1 bg-indigo-500/20 text-indigo-300 text-xs font-semibold rounded-md mb-2">
+                    <i class="fa-solid fa-bolt mr-1"></i> Daily Revision
+                </span>
+                <h2 class="text-xl font-bold text-white mb-1">अरे भाई, लग जा तैयारी पर! 🎯</h2>
+                <p class="text-xs text-slate-300 leading-relaxed">
+                    फिजिक्स, केमिस्ट्री और बायोलॉजी के फुल मॉक टेस्ट और शॉर्ट नोट्स के साथ अपनी तैयारी को पक्का करें।
+                </p>
+            </div>
+        </div>
+
+        <!-- Quick Navigation Grid -->
+        <div class="grid grid-cols-4 gap-3">
+            <div class="bg-slate-900/90 border border-slate-800/80 rounded-2xl p-3 text-center flex flex-col items-center justify-center shadow-md active:scale-95 transition cursor-pointer">
+                <div class="w-11 h-11 rounded-xl bg-indigo-500/10 text-indigo-400 flex items-center justify-center mb-1.5 text-base">
+                    <i class="fa-solid fa-file-lines"></i>
+                </div>
+                <span class="text-xs font-medium text-slate-200">Tests</span>
+            </div>
+            <div class="bg-slate-900/90 border border-slate-800/80 rounded-2xl p-3 text-center flex flex-col items-center justify-center shadow-md active:scale-95 transition cursor-pointer">
+                <div class="w-11 h-11 rounded-xl bg-purple-500/10 text-purple-400 flex items-center justify-center mb-1.5 text-base">
+                    <i class="fa-solid fa-book-open"></i>
+                </div>
+                <span class="text-xs font-medium text-slate-200">Notes</span>
+            </div>
+            <div class="bg-slate-900/90 border border-slate-800/80 rounded-2xl p-3 text-center flex flex-col items-center justify-center shadow-md active:scale-95 transition cursor-pointer">
+                <div class="w-11 h-11 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center mb-1.5 text-base">
+                    <i class="fa-solid fa-square-root-variable"></i>
+                </div>
+                <span class="text-xs font-medium text-slate-200">Formulas</span>
+            </div>
+            <div class="bg-slate-900/90 border border-slate-800/80 rounded-2xl p-3 text-center flex flex-col items-center justify-center shadow-md active:scale-95 transition cursor-pointer">
+                <div class="w-11 h-11 rounded-xl bg-amber-500/10 text-amber-400 flex items-center justify-center mb-1.5 text-base">
+                    <i class="fa-solid fa-clipboard-question"></i>
+                </div>
+                <span class="text-xs font-medium text-slate-200">PYQs</span>
+            </div>
+        </div>
+
+        <!-- Test Series Section -->
+        <div class="space-y-3">
+            <div class="flex items-center justify-between px-1">
+                <h3 class="text-sm font-bold tracking-wide text-slate-200 flex items-center gap-2">
+                    <span class="w-2 h-2 rounded-full bg-indigo-500 animate-pulse"></span> Test Series
+                </h3>
+                <span class="text-xs text-indigo-400 font-semibold">Active</span>
+            </div>
+
+            <!-- Test Card 1 (Direct link to test1.html) -->
+            <div class="bg-slate-900 border border-slate-800 rounded-2xl p-4 shadow-lg flex items-center justify-between">
+                <div>
+                    <span class="inline-block px-2 py-0.5 bg-indigo-500/10 text-indigo-400 text-[10px] font-bold rounded mb-1">Test #1</span>
+                    <h4 class="text-sm font-bold text-white mb-1">NEET Practice Mock Test 1</h4>
+                    <p class="text-xs text-slate-400">Physics, Chem & Bio • +4 / -1</p>
+                </div>
+                <a href="test1.html" class="bg-indigo-600 hover:bg-indigo-500 text-white font-semibold text-xs px-4 py-2.5 rounded-xl shadow-md shadow-indigo-600/30 transition active:scale-95 text-center">
+                    Start
+                </a>
+            </div>
+
+            <!-- Test Card 2 -->
+            <div class="bg-slate-900 border border-slate-800 rounded-2xl p-4 shadow-lg flex items-center justify-between">
+                <div>
+                    <span class="inline-block px-2 py-0.5 bg-emerald-500/10 text-emerald-400 text-[10px] font-bold rounded mb-1">Test #2</span>
+                    <h4 class="text-sm font-bold text-white mb-1">Botany & Zoology Special Test</h4>
+                    <p class="text-xs text-slate-400">Full Chapter Wise • +4 / -1</p>
+                </div>
+                <button onclick="alert('Test 2 coming soon!')" class="bg-indigo-600 hover:bg-indigo-500 text-white font-semibold text-xs px-4 py-2.5 rounded-xl shadow-md shadow-indigo-600/30 transition active:scale-95">
+                    Start
+                </button>
+            </div>
+        </div>
+
+        <!-- Short Notes & Study Material -->
+        <div class="space-y-3 pt-2">
+            <div class="flex items-center justify-between px-1">
+                <h3 class="text-sm font-bold tracking-wide text-slate-200">Short Notes & Study Material</h3>
+            </div>
+
+            <div class="bg-slate-900 border border-slate-800 rounded-2xl p-4 shadow-lg flex items-center justify-between">
+                <div>
+                    <h4 class="text-sm font-bold text-white mb-1">Physics Short Notes</h4>
+                    <p class="text-xs text-slate-400">All Formulas Revision Sheet</p>
+                </div>
+                <span class="text-xs font-semibold px-3 py-1 rounded-lg bg-slate-800 text-slate-400">Soon</span>
+            </div>
+        </div>
+
+    </main>
+
+</body>
+</html>
