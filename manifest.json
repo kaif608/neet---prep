@@ -1,16 +1,15 @@
 {
   "name": "NEET Prep Hub",
-  "short_name": "NEET Prep",
-  "start_url": "index.html",
+  "short_name": "NEET Hub",
+  "start_url": "/",
   "display": "standalone",
-  "background_color": "#0f0c29",
-  "theme_color": "#0f0c29",
+  "background_color": "#0a0c14",
+  "theme_color": "#0a0c14",
   "icons": [
     {
-      "src": "logo.svg",
+      "src": "logo.jpg",
       "sizes": "512x512",
-      "type": "image/svg+xml",
-      "purpose": "any maskable"
+      "type": "image/jpeg"
     }
   ]
 }
